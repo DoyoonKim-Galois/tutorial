@@ -87,7 +87,7 @@ my $OUT3 = &openOut($output3);
 print $OUT3 "이 동네에 행동력 높은 덕후들이 많다 보니, 우리가 남긴 단서를 쫓아올까봐 메뚜기 폴리가 걱정하고 있다.\n".
 "하지만 걱정하지 마라. 손은 눈보다 빠르니까. 이들을 속일 심산으로, 우린 99개의 빈 종이를 섞어두고, 딱 1개에만 단서를 적어 신문가판대(newsAgent) 안에 숨겨뒀다. 후후. 게다가 요즘 누가 신문을 읽는다고 신문가판대를 뒤져보겠나!.\n".
 "신문가판대 안에서 남쪽으로 다섯 걸음, 서쪽으로 한 걸음 내딛자.\n".
-"ls를 잘 사용할 줄 아는 우리만이 이 단서를 찾을 수 있을 것이다. ls의 옵션은 구글에 검색해보며 해쳐나가자. 원래 그렇게 해나가는거다! \n";
+"ls를 잘 사용할 줄 아는 우리만이 이 단서를 찾을 수 있을 것이다. ls의 옵션은 구글에 검색해보며 해쳐나가자. 원래 그렇게 해나가는거다! (힌트: ls -l) \n".
 "단서는 새로 찾을때 마다 가방(toteBag) 안에 복사(cp)해두자\n";
 `gzip $output3`;
 
@@ -102,14 +102,16 @@ my $output4 = 'newsAgent/southFiveSteps/westOneStep/Clue04_R_78.txt';
 my $OUT4 = &openOut($output4);
 print $OUT4 "이런, 우리 귀여운 사슴벌레 밥(젤리)주러 가야 할 시간이다.\n".
 "다행히 다음 단서가 정확히 어디에 있는지 알고 있다. cd 치고 다음 문구를 붙여넣으면 그쪽으로 단번에 갈 수 있다.\n".
-$here."/harbour/westThreeSteps/northTwoSteps\n";
+$here."/harbour/westThreeSteps/northTwoSteps\n".
+"지금 읽고 있는 이 단서를 가방(toteBag) 안에 복사(cp)해두는 것도 잊지 말 것!\n";
 
 my $output5 = 'harbour/westThreeSteps/northTwoSteps/Clue05_D.txt';
 my $OUT5 = &openOut($output5);
 
-print $OUT5 "아주 예쁜 진주(Perl)가 해안(beach)에 떨어져 있다. 이 정도 크기의 진주면 졸업하고 일 안해도 먹고 살 수 있지 않을까..?\n".
+print $OUT5 "아주 예쁜 진주(Perl)가 해안(beach)에 떨어져 있다고 한다. 그 정도 크기의 진주면 졸업하고 일 안해도 먹고 살 수 있지 않을까..?\n".
 "하지만 내가 선택한 생명과학과다, 악으로 깡으로 나아가자.\n".
-"동쪽으로 한 걸음, 남쪽으로 한 걸음.\n";
+"진주(Perl)를 줍줍하기 위해서는 해안(beach)으로 가서 동쪽으로 한 걸음, 남쪽으로 한 걸음 가면된다.\n".
+"우선, 지금 이 단서를 가방(toteBag) 안에 먼저 복사(cp)해두고 출발하자!\n";
 
 #`cp ~/scripts/Clue06.pl beach/eastOneStep/southOneStep/`;
 
@@ -123,29 +125,29 @@ my $output8 = 'pineTree/northFiveSteps/atThreeOClockFollowParallelToTheShadowFro
 my $OUT8 = &openOut($output8);
 
 print $OUT8 "탭 만세! 탭이란 얼마나 소중한 버튼인가. 아이디 쓰다가 비번 넘어가는 그런 귀여운 기능의 버튼이 아니다. 탭이 없었다면 파이펫 아닌 키보드로도 관절염에 걸릴 수 있다는 걸 배우게 됐겠지.".
-"이제 귀여운 앵무새를 구하러 가자(parrotShop). 동쪽으로 세 걸음 간 뒤, 눈을 감고 파도 소리가 들려오는 곳을 향해 걸어라.\n".
+"그러다 갑자기 앵무새의 비명소리가 들린다. 어서 귀여운 앵무새를 구하러 가자(parrotShop). 동쪽으로 세 걸음 간 뒤, 눈을 감고 파도 소리가 들려오는 곳을 향해 걸어라.\n".
 "참, 발견해온 단서들을 가방(toteBag) 안에 복사(cp)하는거 잊지 말고! \n";
 my $output9 = 'parrotShop/eastThreeSteps/closeEyesAndWalkTowardsTheSoundOfTheWaves/Clue09_P.txt';
 my $OUT9 = &openOut($output9);
 
 print $OUT9 "다른 컴맹 생물학자들이 탭 안 쓰고 명령어 일일이 치고 있는 걸 보면 새벽에 티타임 갖는 걸 보는 것 만큼이나 너어어무 고통스럽다.\n".
-"다시 한 번 해보자. 등대(lightHouse)로 가서 서쪽으로 다섯 걸음, 다시 하지(summer solstice)에 최초로 비치는 빛이 만나는 지점을 향해 나아가라.\n";
-
+"그러다 갑자기 등대의 불빛이 수상하게 빛난다. 등대(lightHouse)로 가서 서쪽으로 다섯 걸음, 다시 하지(summer solstice)에 최초로 비치는 빛이 만나는 지점을 향해 나아가라.\n".
+"단서를 가방(toteBag) 안에 복사(cp)하는거 잊지 말고! \n";
 my $output10 = 'lightHouse/westFiveSteps/atTheSummerSolsticeDigWhereTheFirstRayOfLightMeetsThePath/Clue10_5.txt';
 my $OUT10 = &openOut($output10);
 
 print $OUT10 "좋아, 지금까지 뭔가를 만드는 일을 해봤다. 이제 뭔가를 지우는 데(우리의 인생같은거?ㅋ) 얼마나 일가견 있는지 한번 살펴보자.\n".
-"보철 기구 파는 가게(prostheticShop)로 가자. 북쪽으로 한 걸음, 동쪽으로 네 걸음.\n";
-
+"보철 기구 파는 가게(prostheticShop)로 가자. 북쪽으로 한 걸음, 동쪽으로 네 걸음.\n".
+"단서를 가방(toteBag) 안에 복사(cp)하는거 잊지 말고! \n";
 my $output11 = 'prostheticShop/northOneStep/eastFourSteps/falseClue11.txt';
 my $OUT11 = &openOut($output11);
-print $OUT11 "아무것도 없잖아!!! 펄 스크립트를 시도해보자(perl).\n";
+print $OUT11 "아무것도 없잖아!!! 진짜 단서에다가 펄 스크립트를 시도해보자(perl).\n";
 
 my $output11a = 'prostheticShop/northOneStep/eastFourSteps/Clue11_N.txt';
 my $OUT11a = &openOut($output11a);
 
 print $OUT11a "다음 단서를 얻으려면 파일을 이동시키거나 이름을 바꿔야 한다. 거대한 바위(largeStone)로 향해 남쪽으로 두 걸음, 서쪽으로 네 걸음 가라.\n".
-"바위 밑에는 곤충...ㅋ 이 아니라 석영(quartz) 덩어리가 보일 것이다. 이걸 가방(toteBag)에 복사하지 말고 이동(mv)시키도록 하자.\n".
+"바위 밑에는 곤충...ㅋ 이 아니라 석영(quartz) 덩어리가 보일 것이다. 그 안에 다음 단서가 있으니 읽어보도록. 이걸 가방(toteBag)에 복사하지 말고 이동(mv)시키도록 하자.\n".
 "가방으로 이동하고 나면 파일 이름을 \'Clue12_5.txt\' 으로 바꿔보자(mv).\n".
 "mv 명령어가 어떤건지 구글에 검색해보며 해쳐나가자. 원래 그렇게 하는거라고! \n";
 `mv prostheticShop/northOneStep/eastFourSteps/Clue11_N.txt prostheticShop/southThreeSteps/westThreeSteps/Clue11_N.txt`;
@@ -227,8 +229,8 @@ foreach my $num (0..943){
 	print $OUTP1 "\n".$num.",\n\n\n\n";
 }
 print $OUTP1 ');'."\n\n".'sub out {'."\n".'print "이거 정말이지 예쁜 진주(perl)로군! 잘만 팔면....평생...놀며 먹고 살....수....있겠어...! 계속하기 전에 이 내용을 기록해두는 게 좋겠다.\n'.
-'방금 친 perl 명령어를 다시 실행하고, 지금 화면에 뜬 이 내용(STDOUT)을 잡아서 (>) Clue06_S.txt 라는 이름을 지닌 파일에 집어넣도록 하자.\n'.
-'그 뒤에 이 단서를 가방(toteBag)에 복사하면 되겠군.\n'.
+'지금 화면에 뜬 이 내용을 복사하고, 메모장(Nano)를 열어서, Clue06_S.txt 라는 이름으로 저장해서 기록해두자!\n'.
+'그 뒤에 Clue06_S.txt를 단서를 가방(toteBag)에 복사해서 넣어두자.\n'.
 '모두 정리되면 다리(bridge)로 가서 북쪽으로 다섯 걸음, 서쪽으로 한 걸음 이동하자.\n";'."\n".'}'."\n\n";
 print $OUTP1 'my @num = ('."\n";
 foreach my $num (0..678){
@@ -249,9 +251,9 @@ print $OUTP2 'if ($mark == 0) {'."\n";
 print $OUTP2 "\t".'`cp '.$here.'/prostheticShop/southThreeSteps/westThreeSteps/Clue11_N.txt ../../../toteBag/`;'."\n";
 print $OUTP2 "\t".'print "아이고, 이걸 지워버리다니! 뭔 생각인가 대체? 빠르게 휴지통으로 가서 다시 살려내라!\n";'."\n";
 print $OUTP2 "\t".'sleep 3;'."\n";
-print $OUTP2 "\t".'print "장난이다 키킼. 이미 그 파일은 아예 완전히 사라졌다. UNIX에서 뭔가를 삭제한다면 진짜 그냥 사라진다.\n'.
-'휴지통에서 복구하거나 취소하는 것 따위는 불가능하다. rm -rf 같은 거 잘못 건들면 X된다!\n";'."\n";
-print $OUTP2 "\t".'print "진짜 단서 11을 살펴보려면 네 가방(toteBag)을 확인해봐라(cd).\n";'."\n";
+print $OUTP2 "\t".'print "장난이다 키킼. 이미 그 파일은 아예 완전히 사라졌다. 리눅스에서 뭔가를 삭제한다면 진짜 그냥 사라진다.\n'.
+'휴지통에서 복구하거나 취소하는 것 따위는 불가능하다. rm -rf 같은 거 잘못 건들면 진짜 망한다!\n";'."\n";
+print $OUTP2 "\t".'print "진짜 단서 11은 이미 네 가방(toteBag)안에 몰래 넣어두었다. 확인해보도록!\n";'."\n";
 print $OUTP2 '} else {'."\n";
 print $OUTP2 "\t".'print "잘못된 단서(false clue)를 제거하고(rm) 다시 시도하자,\n";'."\n".'}'."\n";
 close $OUTP2;
